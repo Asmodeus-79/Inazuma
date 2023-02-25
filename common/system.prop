@@ -27,6 +27,17 @@ ro.zygote.preload.disable=1
 dalvik.vm.dex2oat64.enabled
 arm64.memtag.process.system_server
 
+# GPU Tweak
+hw2d.force=1
+hw3d.force=1
+debug.composition.type=mdp
+hwui.render_dirty_regions=true
+persist.sys.composition.type=mdp
+persist.sys.ui.hw=1
+ro.config.enable.hw_accel=true
+ro.fb.mode=1
+ro.sf.compbypass.enable=0
+
 # Disable LMK debugging
 persist.sys.lmk.reportkills=false
 sys.lmk.reportkills=false
@@ -40,20 +51,6 @@ persist.traced_perf.enable=0
 # Disable vidc debugging
 vendor.vidc.debug.level=0
 vidc.debug.level=0
-
-# GPU Tweak
-hw2d.force=1
-hw3d.force=1
-debug.composition.type=gpu
-debug.enabletr=true
-debug.overlayui.enable=1
-hwui.render_dirty_regions=true
-persist.sys.composition.type=gpu
-persist.sys.ui.hw=1
-ro.config.enable.hw_accel=true
-ro.product.gpu.driver=1
-ro.fb.mode=1
-ro.sf.compbypass.enable=0
 
 # KillLogger
 log.resolves=0
