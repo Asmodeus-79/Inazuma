@@ -34,11 +34,8 @@ debug.composition.type=mdp
 hwui.render_dirty_regions=true
 persist.sys.composition.type=mdp
 
-# Disable LMK debugging
-persist.sys.lmk.reportkills=false
-sys.lmk.reportkills=false
-ro.lmk.debug=false
-ro.lmk.log_stats=false
+#LMK Heavy Game
+echo "2560,5120,11520,25600,35840,38400" > /sys/module/lowmemorykiller/parameters/minfree
 
 # Disable traced
 persist.traced.enable=0
