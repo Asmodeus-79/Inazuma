@@ -2,25 +2,11 @@
 # Example: Change dpi
 # ro.sf.lcd_density=320
 
-# Dex2oat optimize
-persist.bg.dexopt.enable=true
-pm.dexopt.bg-dexopt=everything
-pm.dexopt.forced-dexopt=everything
-dalvik.vm.boot-dex2oat-threads=8
-ro.sys.fw.dex2oat_thread_count=8
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dexopt-flags=v=n,o=a,u=y
+persist.sys.dalvik.multithread=true
 
-# App proccess
-persist.device_config.runtime_native.usap_pool_enabled=true
-
-# Enable usage of dex2oat64 to better dexopt time
-dalvik.vm.dex2oat64.enabled
-arm64.memtag.process.system_server
-
-#LMK Heavy Game
-echo "2560,5120,11520,25600,35840,38400" > /sys/module/lowmemorykiller/parameters/minfree
+# Render Tweak
+debug.renderengine.backend=opengl
+persist.sys.composition.type=mdp
 
 # Wireless Tweaks
 net.ipv4.ip_no_pmtu_disc=0

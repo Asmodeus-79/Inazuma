@@ -8,9 +8,10 @@ MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
 
+# Universal Thermal Disabler
+echo 0 > /sys/class/thermal/thermal_zone*/mode
+
 # stop stock thermal
 stop mi_thermald
-stop thermal_core
-stop thermald
 
 # done
