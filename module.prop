@@ -1,7 +1,6 @@
 id=Inazuma-Optimizer
 name=Inazuma Optimizer
-version=v4
+version=v5
 versionCode=1
 author=Asmodeus79
-description=Some optimization + stop Poco M5 stock thermal
-
+description=Dalvik Multithread, Thermods, and some optimization

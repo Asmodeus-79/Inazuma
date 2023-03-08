@@ -6,21 +6,6 @@ POSTFSDATA=true
 
 LATESTARTSERVICE=true
 
-##########################################################################################
-# Replace list
-##########################################################################################
-
-# List all directories you want to directly replace in the system
-# Check the documentations for more info why you would need this
-
-# Construct your list in the following format
-# This is an example
-REPLACE_EXAMPLE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
 
 # Construct your own list here
 REPLACE="
@@ -31,7 +16,7 @@ REPLACE="
 
 print_modname() {
   ui_print "********************************"
-  ui_print " Optimizer + stop Stock Thermal "
+  ui_print "      Optimizer + Thermods      "
   ui_print "         by=Asmodeus79          "  
   ui_print "********************************"
 }
